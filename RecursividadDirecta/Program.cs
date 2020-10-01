@@ -1,5 +1,4 @@
 ﻿using System;
-
 class Program{
     static int [] serie;
     static void Main(string[] args){
