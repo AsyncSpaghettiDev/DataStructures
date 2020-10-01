@@ -26,7 +26,7 @@ class Program{
 
         // Despliegue de resultados
         foreach(int item in serie)
-            Console.Write(item + "\t");
+            Console.Write(item + " | ");
 
         // Salida del programa
         Console.Write("\nPresiona una tecla para salir...");
