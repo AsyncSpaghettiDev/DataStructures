@@ -33,10 +33,5 @@ class Program{
         Console.ReadLine();
     }
     // Se calcula la serie fibonacci y se almacena su valor en la variable global
-    static int Fibonacci(int fib){
-        if (fib == 0 || fib == 1)
-            return serie[fib] = 1;
-        else
-            return serie[fib] = Fibonacci(fib - 1) + Fibonacci(fib - 2);
-    }
+    static int Fibonacci(int fib) => fib == 0 || fib == 1 ? serie[fib] = 1 : serie[fib] = Fibonacci(fib - 1) + Fibonacci(fib - 2);
 }
