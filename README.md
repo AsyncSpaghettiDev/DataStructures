@@ -8,5 +8,5 @@ Repositorio de Curso de Estructuras de datos
 [Programa #5](./ConjuntosHashSet/Program.cs) Manejo de Conjuntos  
 [Programa #6](./AnalisisAlgoritmos/Program.cs) Análisis de algoritmos en el tiempo  
 [Programa #7](./Registros/Program.cs) Manejo de registros con Struct  
-[Programa #8](./RecursividadDirecta/Program.cs) Algoritmo recursivo para la Serie Fibonacci
-[Programa #9](./Suma_Recursiva/Program.cs) Suma de un número naturale con sus anteriores hasta el 0.
+[Programa #8](./RecursividadDirecta/Program.cs) Algoritmo recursivo para la Serie Fibonacci  
+[Programa #9](./Suma_Recursiva/Program.cs) Suma de un número naturale con sus anteriores hasta el 0  
