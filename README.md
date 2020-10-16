@@ -14,4 +14,4 @@ Repositorio de Curso de Estructuras de datos
 [Programa #11](./ParImparRecursivoIndirecto/Program.cs) Determinar si un numero es par o impar usando recursividad  
 [Programa #12](./SerieSumaRecursivaIndirecta/Program.cs) Calcular la seria de suma dado ciertos limites  
 [Programa #13](./Pila_Estatica_Estudiantes/Program.cs) Implementacion de pilas estaticas con métodos  
-[Programa #14](./Pilas_Stack) Uso de pilas dinamicas (Stack) con metodos  
+[Programa #14](./Pilas_Stack/Program.cs) Uso de pilas dinamicas (Stack) con metodos  
