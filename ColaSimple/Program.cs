@@ -42,7 +42,7 @@ namespace ColaSimple {
                 switch (opcion) {
                     // Opcion de insertar a la cola
                 case "1":
-                // Se nombra a la consola
+                    // Se nombra a la consola
                     Console.Title = "Insertando edades a la cola";
                     // Se declara ciclo de captura
                     bool capturando = true;
@@ -76,7 +76,7 @@ namespace ColaSimple {
                             if (limiteInferior == -1) limiteInferior = 0;
 
                             // Se comprueba si el usuario quiere seguir ingresando edades
-                            
+
                             Console.Write("\n[1] Si\n[!]Cualquier otra para no\n¿Desea seguir capturando edades?: ");
                             capturando = Console.ReadLine().Contains("1");
                         }
@@ -89,9 +89,9 @@ namespace ColaSimple {
 
                     break;
 
-                // Opcion de eliminar de la cola
+                    // Opcion de eliminar de la cola
                 case "2":
-// Se nombra a la consola
+                    // Se nombra a la consola
                     Console.Title = "Eliminando edades de la cola";
 
                     // Declaracion de ciclo de eliminación
@@ -99,7 +99,7 @@ namespace ColaSimple {
                     do {
                         // Se limpia la consola
                         Console.Clear();
-                        
+
                         // Se recibe confirmación de eliminar edad
                         Console.Write("[1] Si\n[!] Cualquier otro para no\n¿Confirma eliminar la edad {0}?: ", edades [limiteInferior] + 1);
                         // En caso de no confirmarlo se cierra el ciclo de eliminacion
@@ -138,7 +138,7 @@ namespace ColaSimple {
                     Console.ReadKey();
                     break;
 
-                // Opción de salida del ciclo.
+                    // Opción de salida del ciclo.
                 default:
                     operando = false;
                     break;
