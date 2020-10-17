@@ -9,7 +9,7 @@ Repositorio de Curso de Estructuras de datos
 [Programa #5](./ConjuntosHashSet/Program.cs) Manejo de Conjuntos  
 *Análisis de Algoritmos*  
 [Programa #6](./AnalisisAlgoritmos/Program.cs) Análisis de algoritmos en el tiempo  
-*Uso de Struct*  
+**Uso de Struct**  
 [Programa #7](./Registros/Program.cs) Manejo de registros con Struct  
 *Recursividad*  
 [Programa #8](./RecursividadDirecta/Program.cs) Algoritmo recursivo para la Serie Fibonacci  
