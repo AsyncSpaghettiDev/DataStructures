@@ -23,3 +23,5 @@
 [Programa #15](./PilasRecursivas/Program.cs) Uso de metodos recursivos para realizar operaciones en pilas  
 ***Colas***  
 [Programa #16](./ColaSimple/Program.cs) Introducción a uso de Colas  
+[Programa #17](./ColaMetodos/Program.cs) Usando colas con métodos  
+[Programa #18](./ColaDoble/Program.cs) Introducción de colas dobles  
