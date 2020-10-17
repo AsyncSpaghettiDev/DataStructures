@@ -157,21 +157,27 @@ namespace ColaMetodos {
         static void Buscar(string [] animales, int Inferior, int Superior, string buscando) {
             // Se asigna un bool en el que se registrará si se ha encontrado
             bool encontrado = false;
-            for (int i = Inferior + 1; i < Superior; i++)
-                // En caso que un elemento contenga el nombre indicado se establece el bool encontrado, y se rompe el ciclo
-                if (animales [i].Contains(buscando)) {
-                    Console.Write($"Se encontró { buscando } en la posición { i + 1 } de la cola");
-                    encontrado = true;
-                    break;
-                }
-            // En caso de no haber encontrado nada se indica con consola
-            if (!encontrado) Console.Write($"No se encontró { buscando } en la cola: ");
-            // Se deja que el usuario vea el mensaje desplegado anteriormente
-            Console.ReadKey();
+            if (Vacia(Inferior)) {
+                Console.Write("Cola Vacia... ");
+                Console.ReadKey();
+            }
+            else {
+                for (int i = Inferior; i <= Superior; i++)
+                    // En caso que un elemento contenga el nombre indicado se establece el bool encontrado, y se rompe el ciclo
+                    if (animales [i].Replace(" ", "").ToLower().Equals( buscando.Replace(" ", "").ToLower() ) ) {
+                        Console.Write($"Se encontró { buscando } en la posición { i + 1 } de la cola");
+                        encontrado = true;
+                        break;
+                    }
+                // En caso de no haber encontrado nada se indica con consola
+                if (!encontrado) Console.Write($"No se encontró { buscando } en la cola: ");
+                // Se deja que el usuario vea el mensaje desplegado anteriormente
+                Console.ReadKey();
+            }
         }
         // Metodo encargado de desplegar la cola
         static void Desplegar(string [] animales) {
-            foreach (string animal in animales) Console.Write(animal + "| ");
+            foreach (string animal in animales) Console.Write(animal + " | ");
             // Se deja que el usuario pueda ver el desplegado.
             Console.ReadKey();
         }
