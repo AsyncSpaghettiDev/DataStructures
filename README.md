@@ -27,7 +27,7 @@
 [Programa #18](./ColaDoble/Program.cs) Introducción de colas dobles  
 [Programa #19](./ColaCircular/Program.cs) Introducción a las colas circulares  
 [Programa #20](./ColaDinamica/Program.cs) Introducción a las colas dinámicas  
-***Listas***
+***Listas***  
 [Programa #21](./ListasEnlazadasSimples/Program.cs) Introducción a las listas Enlazadas Simples  
 [Programa #22](./ListaEnlazadaCircular/Program.cs) Introducción a las listas enlazadas circulares  
 [Programa #23](./ListaEnlazadaDoble/Program.cs) Introducción a las listas enlazadas dobles  
