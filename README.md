@@ -31,3 +31,4 @@
 [Programa #21](./ListasEnlazadasSimples/Program.cs) Introducción a las listas Enlazadas Simples  
 [Programa #22](./ListaEnlazadaCircular/Program.cs) Introducción a las listas enlazadas circulares  
 [Programa #23](./ListaEnlazadaDoble/Program.cs) Introducción a las listas enlazadas dobles  
+[Programa #24](./ListaEnlazadaList/Program.cs) Uso de List<T> como lista Enlazada  
