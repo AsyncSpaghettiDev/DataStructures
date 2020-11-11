@@ -32,3 +32,7 @@
 [Programa #22](./ListaEnlazadaCircular/Program.cs) Introducción a las listas enlazadas circulares  
 [Programa #23](./ListaEnlazadaDoble/Program.cs) Introducción a las listas enlazadas dobles  
 [Programa #24](./ListaEnlazadaList/Program.cs) Uso de List<T> como lista Enlazada  
+***Grafos***  
+[Programa #26](./Grafos/Program.cs) Introducción a grafos en formas  
+***Arboles***  
+[Programa #25](./Arbol/Program.cs) Introducción a Arboles recorriendo por Pre-Orden  
