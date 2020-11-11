@@ -16,10 +16,7 @@ namespace Arboles {
             // 19211688
 
             // Declaración de nodos a usar para crear el árbol.
-            Arbol raiz;
-            Arbol temp;
-            Arbol temp2;
-            Arbol re;
+            Arbol raiz = null;
 
             // Declaración de ciclo de menú
             bool operando = true;
@@ -29,7 +26,7 @@ namespace Arboles {
                 Console.Title = "Menú de operaciones con Arboles";
 
                 // Despliegue de opciones del menú
-                Console.Write("[1] Insertar\n[2] Recorrer en Pre-Orden\n[! Otro] Salir");
+                Console.Write("[1] Insertar\n[2] Recorrer en Pre-Orden\n[! Otro] Salir\nSelecciona una opción: ");
 
                 switch (Console.ReadLine()) {
                     // Opción de insertar
@@ -46,7 +43,7 @@ namespace Arboles {
                         Console.Title = "Recorrer el árbol en Pre-Orden";
                         Console.Clear();
                         // Llamada al metodo de recorrido
-                        PreOrden(Raiz);
+                        PreOrden(raiz);
                         break;
                         // Opcion de salida
                     default:
@@ -60,9 +57,10 @@ namespace Arboles {
             // Inicio de ciclo de captura
             bool capturando = true;
             while (capturando) {
+                Console.Clear();
                 // Variables auxiliares
                 bool valido = false;
-                double sueldo;
+                double sueldo = 0;
                 // Validación de la entrada.
                 while (!valido) {
                     Console.Write("Ingresar el sueldo a almacenar: ");
@@ -73,7 +71,7 @@ namespace Arboles {
                 else Insercion(ref raiz, sueldo);
 
                 // Comprobación de seguir el ciclo
-                Console.Write("\n[1] Si\n[! Otro] No\n¿Desea capturar otro sueldo?");
+                Console.Write("\n[1] Si\n[! Otro] No\n¿Desea capturar otro sueldo?: ");
                 capturando = Console.ReadLine().Contains("1");
             }
         }
@@ -83,7 +81,7 @@ namespace Arboles {
             Arbol temporal = raiz;
             Arbol temporal2;
             // Comprobación lógica para determinar la ruta que seguirá el arbol
-            if (string.Compare(sueldo, temporal.sueldo) >= 0)
+            if (sueldo >= temporal.sueldo)
                 // En caso que en el ultimo nodo el apuntador derecho este sin asignar
                 // ahi se coloca el nuevo dato, y el apuntador derecho del anterior se 
                 // asigna al nuevo nodo.
