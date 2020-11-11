@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace Arboles {
     // Definición de un nodo dentro de un arbol
     class Arbol {
@@ -10,7 +9,6 @@ namespace Arboles {
         // Apuntador por izquierda al nodo hijo
         public Arbol apuntadorIzq = null;
         public Arbol(double sueldo) => this.sueldo = sueldo;
-
     }
     class Program {
         static void Main(string [] args) {
