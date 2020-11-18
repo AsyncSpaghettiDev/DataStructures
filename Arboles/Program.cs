@@ -36,7 +36,8 @@ namespace Arboles {
                         Console.Clear();
                         // Llamada al método de inserción.
                         InsertarArbol(ref raiz);
-                        goto case "2";
+
+                        break;
                         // Opcion de recorrido Pre-Orden
                     case "2":
                         // Se prepara la consola
@@ -44,6 +45,7 @@ namespace Arboles {
                         Console.Clear();
                         // Llamada al metodo de recorrido
                         PreOrden(raiz);
+                        Console.ReadKey();
                         break;
                         // Opcion de salida
                     default:
@@ -63,12 +65,16 @@ namespace Arboles {
                 double sueldo = 0;
                 // Validación de la entrada.
                 while (!valido) {
-                    Console.Write("Ingresar el sueldo a almacenar: ");
+                    Console.Write("Ingresar el sueldo a almacenar: $");
                     valido = double.TryParse(Console.ReadLine(), out sueldo);
                 }
                 // Llamada al método insercion en caso que el nodo raiz no esté inicializado
-                if (raiz == null) raiz = new Arbol(sueldo);
-                else Insercion(ref raiz, sueldo);
+                Insercion(ref raiz, sueldo);
+
+                // Se indica que se ha realizado la inserción correctamente
+                Console.WriteLine("\nDato Ingresado correctamente...\n");
+
+                PreOrden(raiz);
 
                 // Comprobación de seguir el ciclo
                 Console.Write("\n[1] Si\n[! Otro] No\n¿Desea capturar otro sueldo?: ");
@@ -77,32 +83,32 @@ namespace Arboles {
         }
         // Metodo recursivo que recorre los subarboles hasta encontrar donde insertar
         static void Insercion(ref Arbol raiz, double sueldo) {
-            // Variables auxiliares
-            Arbol temporal = raiz;
-            Arbol temporal2;
-            // Comprobación lógica para determinar la ruta que seguirá el arbol
-            if (sueldo >= temporal.sueldo)
-                // En caso que en el ultimo nodo el apuntador derecho este sin asignar
-                // ahi se coloca el nuevo dato, y el apuntador derecho del anterior se 
-                // asigna al nuevo nodo.
-                if (temporal.apuntadorDer == null) {
-                    temporal2 = new Arbol(sueldo);
-                    temporal.apuntadorDer = temporal2;
-                }
-            // En caso de no ser así se llama al metodo pero ahora se recorrerá el subarbol derecho
-            else Insercion(ref temporal.apuntadorDer, sueldo);
-            // En caso de que se deba insertar por izquierda se comprueba si el nodo tiene hijo por izq
-            // En caso de ser null se inserta el nodo y el padre se le asocia al hijo con el apuntador izq
-            else if (temporal.apuntadorIzq == null) {
-                temporal2 = new Arbol(sueldo);
-                temporal.apuntadorIzq = temporal2;
-            }
-            // En caso de no ser así se recorre el subarbol izquierda
-            else Insercion(ref temporal.apuntadorDer, sueldo);
 
-            // Se indica que se ha realizado la inserción correctamente
-            Console.Write("Dato Ingresado correctamente...");
-            Console.ReadKey();
+            if (raiz == null) raiz = new Arbol(sueldo);
+            else {
+                // Variables auxiliares
+                Arbol temporal = raiz;
+                Arbol temporal2;
+                // Comprobación lógica para determinar la ruta que seguirá el arbol
+                if (sueldo >= temporal.sueldo)
+                    // En caso que en el ultimo nodo el apuntador derecho este sin asignar
+                    // ahi se coloca el nuevo dato, y el apuntador derecho del anterior se 
+                    // asigna al nuevo nodo.
+                    if (temporal.apuntadorDer == null) {
+                        temporal2 = new Arbol(sueldo);
+                        temporal.apuntadorDer = temporal2;
+                    }
+                // En caso de no ser así se llama al metodo pero ahora se recorrerá el subarbol derecho
+                else Insercion(ref temporal.apuntadorDer, sueldo);
+                // En caso de que se deba insertar por izquierda se comprueba si el nodo tiene hijo por izq
+                // En caso de ser null se inserta el nodo y el padre se le asocia al hijo con el apuntador izq
+                else if (temporal.apuntadorIzq == null) {
+                    temporal2 = new Arbol(sueldo);
+                    temporal.apuntadorIzq = temporal2;
+                }
+                // En caso de no ser así se recorre el subarbol izquierda
+                else Insercion(ref temporal.apuntadorDer, sueldo);
+            }
         }
         // Metodo para recorrer por orden
         static void PreOrden(Arbol Raiz) {
