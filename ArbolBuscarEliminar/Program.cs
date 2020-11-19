@@ -32,7 +32,7 @@ namespace ArbolBuscarEliminar {
                         // Se nombra la consola
                         Console.Title = "Insertando ciudades en el Arbol";
                         InsertarArbol();
-                        break;
+                        goto case "2";
 
                     case "2":
                         Console.Title = "Mostrando el arbol en InOrden";
@@ -52,14 +52,18 @@ namespace ArbolBuscarEliminar {
                         re = raiz;
                         Busqueda(re);
                         Console.ReadKey();
-                        break;
+                        Console.Write("\n\n[1] Si\n[! Otro] No\n¿Desea Buscar otra ciudad?: ");
+                        if(Console.ReadLine().Contains("1")) goto case "3";
+                        else break;
 
                     case "4":
                         Console.Title = "Eliminar ciudades visitadas";
                         Console.Clear();
 
                         EliminarNodo();
-                        break;
+                        Console.Write("\n\n[1] Si\n[! Otro] No\n¿Desea Buscar otra ciudad?: ");
+                        if(Console.ReadLine().Contains("1")) goto case "4";
+                        goto case "2";
 
                     default:
                         operando = false;
@@ -84,7 +88,7 @@ namespace ArbolBuscarEliminar {
                 }
             }
             catch (Exception) {
-                Console.WriteLine("Solo se Pueden Ingresar nombre de ciudades, intente de nuevo");
+                Console.WriteLine("Solo se Pueden Ingresar nombre de ciudades, intente de nuevo...");
             }
         }
         static void Insertar() {
@@ -164,7 +168,7 @@ namespace ArbolBuscarEliminar {
                 while (p != null && !encontrado) {
                     if (p.dato == x) {
                         encontrado = true;
-                        Console.Write($"El nodo { p.dato } será eliminado");
+                        Console.Write($"El nodo { p.dato } será eliminado...");
                     }
                     else {
                         if (string.Compare(x, p.dato) >= 0)
