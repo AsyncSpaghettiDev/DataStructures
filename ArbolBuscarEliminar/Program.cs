@@ -43,7 +43,7 @@ namespace ArbolBuscarEliminar {
                         break;
 
                     case "3":
-                        Console.Title = "Busqueda de una ciudad visitada";
+                        Console.Title = "Busqueda de una ciudad a visitar";
                         Console.Clear();
 
                         Console.Write("Nombre de la ciudad a buscar: ");
@@ -76,7 +76,7 @@ namespace ArbolBuscarEliminar {
                 bool capturando = true;
                 while (capturando) {
                     Console.Clear();
-                    Console.Write("Ingresa el nombre de la ciudad visitada: ");
+                    Console.Write("Ingresa el nombre de la ciudad a visitar: ");
                     x = Console.ReadLine();
 
                     Insertar();
