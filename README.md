@@ -36,3 +36,5 @@
 [Programa #26](./Grafos/Program.cs) Introducción a grafos en formas  
 ***Arboles***  
 [Programa #25](./Arbol/Program.cs) Introducción a Arboles recorriendo por Pre-Orden  
+[Programa #27](./ArbolBuscarEliminar/Program.cs) Implementación final de Arbol Binario con recorrido en InOrden  
+[Programa #28](./ArbolRecorridos/Program.cs) Muestra de los 3 posibles recorrido en un árbol binario  
