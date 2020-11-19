@@ -176,8 +176,8 @@ namespace ArbolRecorridos {
             // Se comprueba que el arbol esté inicializado para recorrer
             if(temp != null){
                 // Se recorre el subarbol izquierdo y el derecho
-                if (temp.ramaIzq != null) PreOrden(temp.ramaIzq);
-                if (temp.ramaDer != null) PreOrden(temp.ramaDer);
+                if (temp.ramaIzq != null) PostOrden(temp.ramaIzq);
+                if (temp.ramaDer != null) PostOrden(temp.ramaDer);
                 // Impresión de la raiz del arbol o subarbol a imprimir
                 Console.Write($"{ temp.dato } | ");
             }
