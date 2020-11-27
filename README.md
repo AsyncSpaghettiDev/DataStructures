@@ -38,6 +38,8 @@
 [Programa #25](./Arbol/Program.cs) Introducción a Arboles recorriendo por Pre-Orden  
 [Programa #27](./ArbolBuscarEliminar/Program.cs) Implementación final de Arbol Binario con recorrido en InOrden  
 [Programa #28](./ArbolRecorridos/Program.cs) Muestra de los 3 posibles recorrido en un árbol binario  
-***Ordenamientos***  
+***Ordenamientos Internos***  
 [Programa #29](./BurbujaVariantes/Program.cs) Implmentación del metodo de Ordenmaiento Burbuja con todas sus variantes  
 [Programa #30](./ShellSort/Program.cs) Implementación del metodo Shell Sort  
+[Programa #31](./QuickSort/Program.cs) Implementación del metodo Quick Sort  
+***Ordenamientos Externos***  
