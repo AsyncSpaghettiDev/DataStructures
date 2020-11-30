@@ -40,6 +40,7 @@
 [Programa #28](./ArbolRecorridos/Program.cs) Muestra de los 3 posibles recorrido en un árbol binario  
 ***Ordenamientos Internos***  
 [Programa #29](./BurbujaVariantes/Program.cs) Implmentación del metodo de Ordenmaiento Burbuja con todas sus variantes  
-[Programa #30](./ShellSort/Program.cs) Implementación del metodo Shell Sort  
-[Programa #31](./QuickSort/Program.cs) Implementación del metodo Quick Sort  
+[Programa #30](./ShellSort/Program.cs) Implementación del ordenamiento por Shell Sort  
+[Programa #31](./QuickSort/Program.cs) Implementación del ordenamiento por Quick Sort  
+[Programa #32](./RadixSort/Program.cs) Implementación del ordenamiento por RadixSort  
 ***Ordenamientos Externos***  
