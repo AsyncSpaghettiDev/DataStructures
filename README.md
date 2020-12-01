@@ -44,3 +44,5 @@
 [Programa #31](./QuickSort/Program.cs) Implementación del ordenamiento por Quick Sort  
 [Programa #32](./RadixSort/Program.cs) Implementación del ordenamiento por RadixSort  
 ***Ordenamientos Externos***  
+[Programa #33](./InterCalacionSimple1/Program.cs) Método #1 de Intercalación Simple  
+[Programa #33](./InterCalacionSimple2/Program.cs) Método #2 de Intercalación Simple  
