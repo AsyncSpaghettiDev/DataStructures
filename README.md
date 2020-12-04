@@ -46,3 +46,6 @@
 ***Ordenamientos Externos***  
 [Programa #33](./IntercalacionSimple1/Program.cs) Método #1 de Intercalación Simple  
 [Programa #34](./IntercalacionSimple2/Program.cs) Método #2 de Intercalación Simple  
+[Programa #35](./Merge/Program.cs) Metodo de Ordenamiento por Mezcla  
+***Busquedas***  
+[Programa #36](./BSecuencial/Programcs) Busqueda de elementos por algoritmo Secuencial  
