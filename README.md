@@ -48,4 +48,4 @@
 [Programa #34](./IntercalacionSimple2/Program.cs) Método #2 de Intercalación Simple  
 [Programa #35](./Merge/Program.cs) Metodo de Ordenamiento por Mezcla  
 ***Busquedas***  
-[Programa #36](./BSecuencial/Programcs) Busqueda de elementos por algoritmo Secuencial  
+[Programa #36](./BSecuencial/Program.cs) Busqueda de elementos por algoritmo Secuencial  
