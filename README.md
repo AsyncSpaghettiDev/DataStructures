@@ -49,3 +49,4 @@
 [Programa #35](./Merge/Program.cs) Metodo de Ordenamiento por Mezcla  
 ***Busquedas***  
 [Programa #36](./BSecuencial/Program.cs) Busqueda de elementos por algoritmo Secuencial  
+[Programa #37](./BusquedaBinaria/Program.cs) Busqueda de elementos de manera Binaria  
